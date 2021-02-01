@@ -1,0 +1,4 @@
+#!/bin/bash
+ffmpeg -i $1 -r 15 -vf "scale=512:-1,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" $1.gif
+
+## mp4togif.sh recorded-footage.mp4
