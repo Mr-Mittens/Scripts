@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CHOICE=$(echo -e "Shutdown\nReboot\nLogout\nHibernate" | dmenu -p 'are you sure ?')
+
+case "$CHOICE" in 
+  Shutdown) systemctl poweroff & ;;
+  Reboot) systemctl reboot & ;;
+  Logout) loginctl kill-user $USER & ;;
+  Hibernate) systemctl hibernate & ;;
+esac
