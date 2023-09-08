@@ -135,7 +135,7 @@ passwd $username
 
 echo "Pre-Installation Finish. Reboot now !! also decide whether you want hyprland or Kde"
 
-# Clone a my repo for the next step!
+# Clone my repo for the next step!
 git clone https://github.com/Mr-Mittens/Scripts /home/$username/Scripts
 
 # Change directory to Scripts/hyprland
